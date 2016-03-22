@@ -98,4 +98,30 @@ void drawLineInContextFromStartPointAndEndPointWithScale (CGContextRef ctx, CGPo
 }
 ```
 
+##BUG和探究
+
+在继承与`MJRefreshHeader`自定制的 `BossHeaderView`中的
+
+```
+#pragma mark 监听拖拽比例（控件被拖出来的比例）
+- (void)setPullingPercent:(CGFloat)pullingPercent {
+    [super setPullingPercent:pullingPercent];
+    //这里 pullingPercent == 1.0 时 会出错 
+    //NSLog(@"pullingprecent = %.2f",pullingPercent);
+    self.mj_y = -self.mj_h * MIN(1.0, MAX(0.0, pullingPercent));
+    CGFloat complete = MIN(1.0, MAX(0.0, pullingPercent-0.125));
+    //NSLog(@"%.4f",complete);
+    self.frashLayer.complete = complete;
+}
+```
+
+会出现 BUG，具体表现如下图
+
+![刷新时出现的BUG.gif](https://ooo.0o0.ooo/2016/03/22/56f1490fe9207.gif)
+
+*bug展示*
+
+虽然我已经给出了解决方案(丑陋的解决)但是还没能找出 BUG 发生的根本原因，在源码中已经做了详尽的注释，希望有兴趣的大神们能帮助修改。
+
+
 希望和各位一起进步。 git地址[Boss直聘下拉刷新效果的实现](https://github.com/gitKun/-Boss-);

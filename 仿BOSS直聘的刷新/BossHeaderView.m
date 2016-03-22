@@ -27,9 +27,8 @@
     // 设置控件的高度
     self.mj_h = 80;
     
-//    self.frashLayer = [DRFrashLayer layer];
-//    
-//    [self.layer addSublayer:_frashLayer];
+    //调试BUG 未达到下拉最大处就会刷新是添加
+    self.backgroundColor = [UIColor lightGrayColor];
 }
 
 #pragma mark 在这里设置子控件的位置和尺寸
@@ -72,8 +71,8 @@
         case MJRefreshStatePulling:
         {
             //这里可以设置状态
-            self.frashLayer.complete = 1.0;
-            
+            //self.frashLayer.complete = 1.0;
+            NSLog(@"@@@");
         }
             break;
         case MJRefreshStateRefreshing:
@@ -89,9 +88,12 @@
 #pragma mark 监听拖拽比例（控件被拖出来的比例）
 - (void)setPullingPercent:(CGFloat)pullingPercent {
     [super setPullingPercent:pullingPercent];
+    //这里 pullingPercent == 1.0 时 会出错 
+    //NSLog(@"pullingprecent = %.2f",pullingPercent);
     self.mj_y = -self.mj_h * MIN(1.0, MAX(0.0, pullingPercent));
-    self.frashLayer.complete = MIN(1.0, MAX(0.0, pullingPercent-0.190));
+    CGFloat complete = MIN(1.0, MAX(0.0, pullingPercent-0.125));
+    //NSLog(@"%.4f",complete);
+    self.frashLayer.complete = complete;
 }
-
 
 @end

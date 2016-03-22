@@ -16,8 +16,6 @@ static CGFloat scaleTimeVale = 0.35;
 
 @interface DRFrashLayer ()
 
-@property (nonatomic, assign) BOOL isAnim;
-
 @end
 
 static BOOL isAnimationing;
@@ -27,14 +25,19 @@ static NSString *kName = @"ScaleAnimationName";
 
 @dynamic animationScale;
 
-//天知道当时我是怎么想的
+
 -(void)setFrame:(CGRect)frame {
-    CGRect newFrame = CGRectMake(0, 0, CGRectGetWidth(frame), 72);
+    CGRect newFrame = CGRectMake(0, 10, CGRectGetWidth(frame), 2*viewHeighte);
     [super setFrame:newFrame];
 }
-
+#warning message == 这里有一处 BUG 仅仅给出了暂时解决方法没有探明 产生的原因
+//为什么外部传入 0.875 时  会调用两次此函数，并且在第二次传入 0 ,但是验证得到第二次并不是外部调用的结果，但是 0.875 这个值是由外界决定的
 - (void)setComplete:(CGFloat)complete {
-    if (self.complete != complete) {
+    //NSLog(@"complete = %.4f",complete);
+    if (complete <0.001) {
+        return;
+    }
+    if (_complete != complete) {
         _complete = complete;
         [self setNeedsDisplay];
     }
@@ -43,8 +46,6 @@ static NSString *kName = @"ScaleAnimationName";
 + (BOOL)needsDisplayForKey:(NSString *)key {
     if ([key isEqualToString:@"animationScale"]) {
         return YES;
-    }else if([key isEqualToString:@"complete"]) {
-        return NO;
     }else {
         return [super needsDisplayForKey:key];
     }
@@ -91,6 +92,7 @@ static NSString *kName = @"ScaleAnimationName";
     isAnimationing = NO;
     [self removeAllAnimations];
     self.complete = 0.0;
+    [self setNeedsDisplay];
 }
 
 #pragma mark ==== 计算类的方法
@@ -143,7 +145,8 @@ void drawLineInContextFromStartPointAndEndPointWithScale (CGContextRef ctx, CGPo
         drawPointAtRect(ScaleFourthPoint,ctx,UIColorFromRGB_DR(0xED7700, 1).CGColor);
     }else {
         //绘制第一个点
-        CGFloat firstPA = MIN(0.85, MAX(0, self.complete/0.2));
+        CGFloat firstPA = MIN(1, MAX(0, self.complete/0.2));
+      //  NSLog(@"%.2f _complete = %.2f",firstPA,self.complete);
         drawPointAtRect(firstPoint,ctx,(UIColorFromRGB_DR(0xF5C604, firstPA)).CGColor);
         if (self.complete>0.225 && self.complete<0.375) {
             //这里要 绘制第一个线条
@@ -209,16 +212,5 @@ void drawLineInContextFromStartPointAndEndPointWithScale (CGContextRef ctx, CGPo
         }
     }
 }
-
-
-
-#pragma mark ==== 计算点的坐标
-//相对于中心坐标系的第一象限点 相对于 iOS 坐标系的计算
-void pointOfCenter(CGPoint center) {
-    
-    
-}
-
-
 
 @end
