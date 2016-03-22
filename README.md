@@ -121,7 +121,12 @@ void drawLineInContextFromStartPointAndEndPointWithScale (CGContextRef ctx, CGPo
 
 *bug展示*
 
-虽然我已经给出了解决方案(丑陋的解决)但是还没能找出 BUG 发生的根本原因，在源码中已经做了详尽的注释，希望有兴趣的大神们能帮助修改。
+
+**BUG已修复，具体原因和解决方案请参考源码**
+
+*解决后的效果图*
+
+![解决后的效果.gif](https://ooo.0o0.ooo/2016/03/22/56f151c1e2552.gif)
 
 
 希望和各位一起进步。 git地址[Boss直聘下拉刷新效果的实现](https://github.com/gitKun/-Boss-);

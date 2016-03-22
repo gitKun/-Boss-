@@ -30,13 +30,10 @@ static NSString *kName = @"ScaleAnimationName";
     CGRect newFrame = CGRectMake(0, 10, CGRectGetWidth(frame), 2*viewHeighte);
     [super setFrame:newFrame];
 }
-#warning message == 这里有一处 BUG 仅仅给出了暂时解决方法没有探明 产生的原因
+//#warning message == 这里有一处 BUG 仅仅给出了暂时解决方法没有探明 产生的原因
 //为什么外部传入 0.875 时  会调用两次此函数，并且在第二次传入 0 ,但是验证得到第二次并不是外部调用的结果，但是 0.875 这个值是由外界决定的
+//补充 bug 产生的原因已经明确了 是由于 -stopAnimation的反复调用引起的
 - (void)setComplete:(CGFloat)complete {
-    //NSLog(@"complete = %.4f",complete);
-    if (complete <0.001) {
-        return;
-    }
     if (_complete != complete) {
         _complete = complete;
         [self setNeedsDisplay];
@@ -89,6 +86,11 @@ static NSString *kName = @"ScaleAnimationName";
 }
 
 - (void)stopAnimation {
+#if 1
+    if (!isAnimationing) {
+        return;
+    }
+#endif
     isAnimationing = NO;
     [self removeAllAnimations];
     self.complete = 0.0;
