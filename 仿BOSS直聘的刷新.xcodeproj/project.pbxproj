@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18E623601C9FEF7A0034093F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E6235F1C9FEF7A0034093F /* main.m */; };
+		18E623631C9FEF7A0034093F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E623621C9FEF7A0034093F /* AppDelegate.m */; };
+		18E623661C9FEF7A0034093F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E623651C9FEF7A0034093F /* ViewController.m */; };
+		18E623691C9FEF7A0034093F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E623671C9FEF7A0034093F /* Main.storyboard */; };
+		18E6236B1C9FEF7A0034093F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18E6236A1C9FEF7A0034093F /* Assets.xcassets */; };
+		18E6236E1C9FEF7A0034093F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E6236C1C9FEF7A0034093F /* LaunchScreen.storyboard */; };
+		18E623791C9FEF7A0034093F /* _BOSS_____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E623781C9FEF7A0034093F /* _BOSS_____Tests.m */; };
+		18E623841C9FEF7A0034093F /* _BOSS_____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E623831C9FEF7A0034093F /* _BOSS_____UITests.m */; };
+		18E623A61C9FEFFF0034093F /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18E623921C9FEFFF0034093F /* MJRefresh.bundle */; };
+		18E623A71C9FEFFF0034093F /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E623951C9FEFFF0034093F /* MJRefreshAutoFooter.m */; };
+		18E623A81C9FEFFF0034093F /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E623971C9FEFFF0034093F /* MJRefreshBackFooter.m */; };
+		18E623A91C9FEFFF0034093F /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E623991C9FEFFF0034093F /* MJRefreshComponent.m */; };
+		18E623AA1C9FEFFF0034093F /* MJRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E6239B1C9FEFFF0034093F /* MJRefreshConst.m */; };
+		18E623AB1C9FEFFF0034093F /* MJRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E6239D1C9FEFFF0034093F /* MJRefreshFooter.m */; };
+		18E623AC1C9FEFFF0034093F /* MJRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E6239F1C9FEFFF0034093F /* MJRefreshHeader.m */; };
+		18E623AD1C9FEFFF0034093F /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E623A11C9FEFFF0034093F /* UIScrollView+MJExtension.m */; };
+		18E623AE1C9FEFFF0034093F /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E623A31C9FEFFF0034093F /* UIScrollView+MJRefresh.m */; };
+		18E623AF1C9FEFFF0034093F /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E623A51C9FEFFF0034093F /* UIView+MJExtension.m */; };
+		18E623B31C9FF0400034093F /* DRFrashLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E623B21C9FF0400034093F /* DRFrashLayer.m */; };
+		18E623B61C9FF0AC0034093F /* BossViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E623B51C9FF0AC0034093F /* BossViewController.m */; };
+		18E623B91C9FF4C40034093F /* BossHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E623B81C9FF4C40034093F /* BossHeaderView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18E623751C9FEF7A0034093F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18E623531C9FEF7A0034093F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18E6235A1C9FEF7A0034093F;
+			remoteInfo = "仿BOSS直聘的刷新";
+		};
+		18E623801C9FEF7A0034093F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18E623531C9FEF7A0034093F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18E6235A1C9FEF7A0034093F;
+			remoteInfo = "仿BOSS直聘的刷新";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18E6235B1C9FEF7A0034093F /* 仿BOSS直聘的刷新.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "仿BOSS直聘的刷新.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18E6235F1C9FEF7A0034093F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18E623611C9FEF7A0034093F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		18E623621C9FEF7A0034093F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		18E623641C9FEF7A0034093F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		18E623651C9FEF7A0034093F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		18E623681C9FEF7A0034093F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18E6236A1C9FEF7A0034093F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18E6236D1C9FEF7A0034093F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18E6236F1C9FEF7A0034093F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18E623741C9FEF7A0034093F /* 仿BOSS直聘的刷新Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "仿BOSS直聘的刷新Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18E623781C9FEF7A0034093F /* _BOSS_____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_BOSS_____Tests.m"; sourceTree = "<group>"; };
+		18E6237A1C9FEF7A0034093F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18E6237F1C9FEF7A0034093F /* 仿BOSS直聘的刷新UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "仿BOSS直聘的刷新UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18E623831C9FEF7A0034093F /* _BOSS_____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_BOSS_____UITests.m"; sourceTree = "<group>"; };
+		18E623851C9FEF7A0034093F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18E623921C9FEFFF0034093F /* MJRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = MJRefresh.bundle; path = MJRefresh/MJRefresh.bundle; sourceTree = "<group>"; };
+		18E623931C9FEFFF0034093F /* MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MJRefresh.h; path = MJRefresh/MJRefresh.h; sourceTree = "<group>"; };
+		18E623941C9FEFFF0034093F /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MJRefreshAutoFooter.h; path = MJRefresh/MJRefreshAutoFooter.h; sourceTree = "<group>"; };
+		18E623951C9FEFFF0034093F /* MJRefreshAutoFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MJRefreshAutoFooter.m; path = MJRefresh/MJRefreshAutoFooter.m; sourceTree = "<group>"; };
+		18E623961C9FEFFF0034093F /* MJRefreshBackFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MJRefreshBackFooter.h; path = MJRefresh/MJRefreshBackFooter.h; sourceTree = "<group>"; };
+		18E623971C9FEFFF0034093F /* MJRefreshBackFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MJRefreshBackFooter.m; path = MJRefresh/MJRefreshBackFooter.m; sourceTree = "<group>"; };
+		18E623981C9FEFFF0034093F /* MJRefreshComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MJRefreshComponent.h; path = MJRefresh/MJRefreshComponent.h; sourceTree = "<group>"; };
+		18E623991C9FEFFF0034093F /* MJRefreshComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MJRefreshComponent.m; path = MJRefresh/MJRefreshComponent.m; sourceTree = "<group>"; };
+		18E6239A1C9FEFFF0034093F /* MJRefreshConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MJRefreshConst.h; path = MJRefresh/MJRefreshConst.h; sourceTree = "<group>"; };
+		18E6239B1C9FEFFF0034093F /* MJRefreshConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MJRefreshConst.m; path = MJRefresh/MJRefreshConst.m; sourceTree = "<group>"; };
+		18E6239C1C9FEFFF0034093F /* MJRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MJRefreshFooter.h; path = MJRefresh/MJRefreshFooter.h; sourceTree = "<group>"; };
+		18E6239D1C9FEFFF0034093F /* MJRefreshFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MJRefreshFooter.m; path = MJRefresh/MJRefreshFooter.m; sourceTree = "<group>"; };
+		18E6239E1C9FEFFF0034093F /* MJRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MJRefreshHeader.h; path = MJRefresh/MJRefreshHeader.h; sourceTree = "<group>"; };
+		18E6239F1C9FEFFF0034093F /* MJRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MJRefreshHeader.m; path = MJRefresh/MJRefreshHeader.m; sourceTree = "<group>"; };
+		18E623A01C9FEFFF0034093F /* UIScrollView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+MJExtension.h"; path = "MJRefresh/UIScrollView+MJExtension.h"; sourceTree = "<group>"; };
+		18E623A11C9FEFFF0034093F /* UIScrollView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+MJExtension.m"; path = "MJRefresh/UIScrollView+MJExtension.m"; sourceTree = "<group>"; };
+		18E623A21C9FEFFF0034093F /* UIScrollView+MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+MJRefresh.h"; path = "MJRefresh/UIScrollView+MJRefresh.h"; sourceTree = "<group>"; };
+		18E623A31C9FEFFF0034093F /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+MJRefresh.m"; path = "MJRefresh/UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
+		18E623A41C9FEFFF0034093F /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+MJExtension.h"; path = "MJRefresh/UIView+MJExtension.h"; sourceTree = "<group>"; };
+		18E623A51C9FEFFF0034093F /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+MJExtension.m"; path = "MJRefresh/UIView+MJExtension.m"; sourceTree = "<group>"; };
+		18E623B11C9FF0400034093F /* DRFrashLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DRFrashLayer.h; path = BossHeaderView/DRFrashLayer.h; sourceTree = "<group>"; };
+		18E623B21C9FF0400034093F /* DRFrashLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DRFrashLayer.m; path = BossHeaderView/DRFrashLayer.m; sourceTree = "<group>"; };
+		18E623B41C9FF0AC0034093F /* BossViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BossViewController.h; sourceTree = "<group>"; };
+		18E623B51C9FF0AC0034093F /* BossViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BossViewController.m; sourceTree = "<group>"; };
+		18E623B71C9FF4C40034093F /* BossHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BossHeaderView.h; sourceTree = "<group>"; };
+		18E623B81C9FF4C40034093F /* BossHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BossHeaderView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18E623581C9FEF7A0034093F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18E623711C9FEF7A0034093F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18E6237C1C9FEF7A0034093F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18E623521C9FEF7A0034093F = {
+			isa = PBXGroup;
+			children = (
+				18E6235D1C9FEF7A0034093F /* 仿BOSS直聘的刷新 */,
+				18E623771C9FEF7A0034093F /* 仿BOSS直聘的刷新Tests */,
+				18E623821C9FEF7A0034093F /* 仿BOSS直聘的刷新UITests */,
+				18E6235C1C9FEF7A0034093F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18E6235C1C9FEF7A0034093F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18E6235B1C9FEF7A0034093F /* 仿BOSS直聘的刷新.app */,
+				18E623741C9FEF7A0034093F /* 仿BOSS直聘的刷新Tests.xctest */,
+				18E6237F1C9FEF7A0034093F /* 仿BOSS直聘的刷新UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18E6235D1C9FEF7A0034093F /* 仿BOSS直聘的刷新 */ = {
+			isa = PBXGroup;
+			children = (
+				18E623B01C9FF0070034093F /* BossHeaderView */,
+				18E623911C9FEFC80034093F /* MJRefresh */,
+				18E623611C9FEF7A0034093F /* AppDelegate.h */,
+				18E623621C9FEF7A0034093F /* AppDelegate.m */,
+				18E623641C9FEF7A0034093F /* ViewController.h */,
+				18E623651C9FEF7A0034093F /* ViewController.m */,
+				18E623B41C9FF0AC0034093F /* BossViewController.h */,
+				18E623B51C9FF0AC0034093F /* BossViewController.m */,
+				18E623671C9FEF7A0034093F /* Main.storyboard */,
+				18E6236A1C9FEF7A0034093F /* Assets.xcassets */,
+				18E6236C1C9FEF7A0034093F /* LaunchScreen.storyboard */,
+				18E6236F1C9FEF7A0034093F /* Info.plist */,
+				18E6235E1C9FEF7A0034093F /* Supporting Files */,
+			);
+			path = "仿BOSS直聘的刷新";
+			sourceTree = "<group>";
+		};
+		18E6235E1C9FEF7A0034093F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18E6235F1C9FEF7A0034093F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18E623771C9FEF7A0034093F /* 仿BOSS直聘的刷新Tests */ = {
+			isa = PBXGroup;
+			children = (
+				18E623781C9FEF7A0034093F /* _BOSS_____Tests.m */,
+				18E6237A1C9FEF7A0034093F /* Info.plist */,
+			);
+			path = "仿BOSS直聘的刷新Tests";
+			sourceTree = "<group>";
+		};
+		18E623821C9FEF7A0034093F /* 仿BOSS直聘的刷新UITests */ = {
+			isa = PBXGroup;
+			children = (
+				18E623831C9FEF7A0034093F /* _BOSS_____UITests.m */,
+				18E623851C9FEF7A0034093F /* Info.plist */,
+			);
+			path = "仿BOSS直聘的刷新UITests";
+			sourceTree = "<group>";
+		};
+		18E623911C9FEFC80034093F /* MJRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				18E623921C9FEFFF0034093F /* MJRefresh.bundle */,
+				18E623931C9FEFFF0034093F /* MJRefresh.h */,
+				18E623941C9FEFFF0034093F /* MJRefreshAutoFooter.h */,
+				18E623951C9FEFFF0034093F /* MJRefreshAutoFooter.m */,
+				18E623961C9FEFFF0034093F /* MJRefreshBackFooter.h */,
+				18E623971C9FEFFF0034093F /* MJRefreshBackFooter.m */,
+				18E623981C9FEFFF0034093F /* MJRefreshComponent.h */,
+				18E623991C9FEFFF0034093F /* MJRefreshComponent.m */,
+				18E6239A1C9FEFFF0034093F /* MJRefreshConst.h */,
+				18E6239B1C9FEFFF0034093F /* MJRefreshConst.m */,
+				18E6239C1C9FEFFF0034093F /* MJRefreshFooter.h */,
+				18E6239D1C9FEFFF0034093F /* MJRefreshFooter.m */,
+				18E6239E1C9FEFFF0034093F /* MJRefreshHeader.h */,
+				18E6239F1C9FEFFF0034093F /* MJRefreshHeader.m */,
+				18E623A01C9FEFFF0034093F /* UIScrollView+MJExtension.h */,
+				18E623A11C9FEFFF0034093F /* UIScrollView+MJExtension.m */,
+				18E623A21C9FEFFF0034093F /* UIScrollView+MJRefresh.h */,
+				18E623A31C9FEFFF0034093F /* UIScrollView+MJRefresh.m */,
+				18E623A41C9FEFFF0034093F /* UIView+MJExtension.h */,
+				18E623A51C9FEFFF0034093F /* UIView+MJExtension.m */,
+			);
+			name = MJRefresh;
+			sourceTree = "<group>";
+		};
+		18E623B01C9FF0070034093F /* BossHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				18E623B11C9FF0400034093F /* DRFrashLayer.h */,
+				18E623B21C9FF0400034093F /* DRFrashLayer.m */,
+				18E623B71C9FF4C40034093F /* BossHeaderView.h */,
+				18E623B81C9FF4C40034093F /* BossHeaderView.m */,
+			);
+			name = BossHeaderView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18E6235A1C9FEF7A0034093F /* 仿BOSS直聘的刷新 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18E623881C9FEF7A0034093F /* Build configuration list for PBXNativeTarget "仿BOSS直聘的刷新" */;
+			buildPhases = (
+				18E623571C9FEF7A0034093F /* Sources */,
+				18E623581C9FEF7A0034093F /* Frameworks */,
+				18E623591C9FEF7A0034093F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "仿BOSS直聘的刷新";
+			productName = "仿BOSS直聘的刷新";
+			productReference = 18E6235B1C9FEF7A0034093F /* 仿BOSS直聘的刷新.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18E623731C9FEF7A0034093F /* 仿BOSS直聘的刷新Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18E6238B1C9FEF7A0034093F /* Build configuration list for PBXNativeTarget "仿BOSS直聘的刷新Tests" */;
+			buildPhases = (
+				18E623701C9FEF7A0034093F /* Sources */,
+				18E623711C9FEF7A0034093F /* Frameworks */,
+				18E623721C9FEF7A0034093F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18E623761C9FEF7A0034093F /* PBXTargetDependency */,
+			);
+			name = "仿BOSS直聘的刷新Tests";
+			productName = "仿BOSS直聘的刷新Tests";
+			productReference = 18E623741C9FEF7A0034093F /* 仿BOSS直聘的刷新Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		18E6237E1C9FEF7A0034093F /* 仿BOSS直聘的刷新UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18E6238E1C9FEF7A0034093F /* Build configuration list for PBXNativeTarget "仿BOSS直聘的刷新UITests" */;
+			buildPhases = (
+				18E6237B1C9FEF7A0034093F /* Sources */,
+				18E6237C1C9FEF7A0034093F /* Frameworks */,
+				18E6237D1C9FEF7A0034093F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18E623811C9FEF7A0034093F /* PBXTargetDependency */,
+			);
+			name = "仿BOSS直聘的刷新UITests";
+			productName = "仿BOSS直聘的刷新UITests";
+			productReference = 18E6237F1C9FEF7A0034093F /* 仿BOSS直聘的刷新UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18E623531C9FEF7A0034093F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = kun;
+				TargetAttributes = {
+					18E6235A1C9FEF7A0034093F = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					18E623731C9FEF7A0034093F = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 18E6235A1C9FEF7A0034093F;
+					};
+					18E6237E1C9FEF7A0034093F = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 18E6235A1C9FEF7A0034093F;
+					};
+				};
+			};
+			buildConfigurationList = 18E623561C9FEF7A0034093F /* Build configuration list for PBXProject "仿BOSS直聘的刷新" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18E623521C9FEF7A0034093F;
+			productRefGroup = 18E6235C1C9FEF7A0034093F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18E6235A1C9FEF7A0034093F /* 仿BOSS直聘的刷新 */,
+				18E623731C9FEF7A0034093F /* 仿BOSS直聘的刷新Tests */,
+				18E6237E1C9FEF7A0034093F /* 仿BOSS直聘的刷新UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18E623591C9FEF7A0034093F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E6236E1C9FEF7A0034093F /* LaunchScreen.storyboard in Resources */,
+				18E6236B1C9FEF7A0034093F /* Assets.xcassets in Resources */,
+				18E623A61C9FEFFF0034093F /* MJRefresh.bundle in Resources */,
+				18E623691C9FEF7A0034093F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18E623721C9FEF7A0034093F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18E6237D1C9FEF7A0034093F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18E623571C9FEF7A0034093F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E623661C9FEF7A0034093F /* ViewController.m in Sources */,
+				18E623AE1C9FEFFF0034093F /* UIScrollView+MJRefresh.m in Sources */,
+				18E623AB1C9FEFFF0034093F /* MJRefreshFooter.m in Sources */,
+				18E623631C9FEF7A0034093F /* AppDelegate.m in Sources */,
+				18E623A91C9FEFFF0034093F /* MJRefreshComponent.m in Sources */,
+				18E623AD1C9FEFFF0034093F /* UIScrollView+MJExtension.m in Sources */,
+				18E623AC1C9FEFFF0034093F /* MJRefreshHeader.m in Sources */,
+				18E623B61C9FF0AC0034093F /* BossViewController.m in Sources */,
+				18E623B31C9FF0400034093F /* DRFrashLayer.m in Sources */,
+				18E623AF1C9FEFFF0034093F /* UIView+MJExtension.m in Sources */,
+				18E623AA1C9FEFFF0034093F /* MJRefreshConst.m in Sources */,
+				18E623A71C9FEFFF0034093F /* MJRefreshAutoFooter.m in Sources */,
+				18E623A81C9FEFFF0034093F /* MJRefreshBackFooter.m in Sources */,
+				18E623B91C9FF4C40034093F /* BossHeaderView.m in Sources */,
+				18E623601C9FEF7A0034093F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18E623701C9FEF7A0034093F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E623791C9FEF7A0034093F /* _BOSS_____Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18E6237B1C9FEF7A0034093F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E623841C9FEF7A0034093F /* _BOSS_____UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18E623761C9FEF7A0034093F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18E6235A1C9FEF7A0034093F /* 仿BOSS直聘的刷新 */;
+			targetProxy = 18E623751C9FEF7A0034093F /* PBXContainerItemProxy */;
+		};
+		18E623811C9FEF7A0034093F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18E6235A1C9FEF7A0034093F /* 仿BOSS直聘的刷新 */;
+			targetProxy = 18E623801C9FEF7A0034093F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18E623671C9FEF7A0034093F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18E623681C9FEF7A0034093F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18E6236C1C9FEF7A0034093F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18E6236D1C9FEF7A0034093F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18E623861C9FEF7A0034093F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		18E623871C9FEF7A0034093F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18E623891C9FEF7A0034093F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "仿BOSS直聘的刷新/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "DR.Terry.com.-BOSS-----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		18E6238A1C9FEF7A0034093F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "仿BOSS直聘的刷新/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "DR.Terry.com.-BOSS-----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		18E6238C1C9FEF7A0034093F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "仿BOSS直聘的刷新Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "DR.Terry.com.-BOSS-----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/仿BOSS直聘的刷新.app/仿BOSS直聘的刷新";
+			};
+			name = Debug;
+		};
+		18E6238D1C9FEF7A0034093F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "仿BOSS直聘的刷新Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "DR.Terry.com.-BOSS-----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/仿BOSS直聘的刷新.app/仿BOSS直聘的刷新";
+			};
+			name = Release;
+		};
+		18E6238F1C9FEF7A0034093F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "仿BOSS直聘的刷新UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "DR.Terry.com.-BOSS-----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "仿BOSS直聘的刷新";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		18E623901C9FEF7A0034093F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "仿BOSS直聘的刷新UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "DR.Terry.com.-BOSS-----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "仿BOSS直聘的刷新";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18E623561C9FEF7A0034093F /* Build configuration list for PBXProject "仿BOSS直聘的刷新" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18E623861C9FEF7A0034093F /* Debug */,
+				18E623871C9FEF7A0034093F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18E623881C9FEF7A0034093F /* Build configuration list for PBXNativeTarget "仿BOSS直聘的刷新" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18E623891C9FEF7A0034093F /* Debug */,
+				18E6238A1C9FEF7A0034093F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		18E6238B1C9FEF7A0034093F /* Build configuration list for PBXNativeTarget "仿BOSS直聘的刷新Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18E6238C1C9FEF7A0034093F /* Debug */,
+				18E6238D1C9FEF7A0034093F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		18E6238E1C9FEF7A0034093F /* Build configuration list for PBXNativeTarget "仿BOSS直聘的刷新UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18E6238F1C9FEF7A0034093F /* Debug */,
+				18E623901C9FEF7A0034093F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18E623531C9FEF7A0034093F /* Project object */;
+}
