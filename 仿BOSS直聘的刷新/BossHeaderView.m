@@ -11,6 +11,9 @@
 
 @interface BossHeaderView ()
 
+/**
+ *  @brief  “为什么不是 fresh?” “请允许我做个悲伤的表情⚉♌︎”
+ */
 @property (nonatomic, strong) DRFrashLayer *frashLayer;
 
 @end
@@ -28,7 +31,10 @@
     self.mj_h = 80;
     
     //调试BUG 未达到下拉最大处就会刷新是添加
-    self.backgroundColor = [UIColor lightGrayColor];
+    //self.backgroundColor = [UIColor lightGrayColor];
+}
+- (void)dealloc {
+    [self.frashLayer stopAnimation];
 }
 
 #pragma mark 在这里设置子控件的位置和尺寸
@@ -86,6 +92,7 @@
 - (void)setPullingPercent:(CGFloat)pullingPercent {
     [super setPullingPercent:pullingPercent];
     //这里 pullingPercent == 1.0 时 会出错 (备注已经解决)
+    //self.mj_y = -self.mj_h * MIN(1.125, MAX(0.0, pullingPercent)); //动手修改一下试试
     self.mj_y = -self.mj_h * MIN(1.0, MAX(0.0, pullingPercent));
     CGFloat complete = MIN(1.0, MAX(0.0, pullingPercent-0.125));
     self.frashLayer.complete = complete;

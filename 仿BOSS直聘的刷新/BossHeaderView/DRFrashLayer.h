@@ -9,6 +9,7 @@
 #import <QuartzCore/QuartzCore.h>
 #import <UIKit/UIKit.h>
 
+/** 请于许我做个悲伤的表情 */
 @interface DRFrashLayer : CALayer
 
 @property (nonatomic, assign) CGFloat complete;

@@ -129,5 +129,6 @@ void drawLineInContextFromStartPointAndEndPointWithScale (CGContextRef ctx, CGPo
 
 ![解决后的效果.gif](https://ooo.0o0.ooo/2016/03/22/56f151c1e2552.gif)
 
+⦿∙⦿又出现BUG，当加载时间够长，而你在动画时返回再进入就会发现绘图并没有出现；现在已经解决了，是由于一个 block的强医用造成的，在代码中已经给出详尽注释。
 
 希望和各位一起进步。 git地址[Boss直聘下拉刷新效果的实现](https://github.com/gitKun/-Boss-);
