@@ -108,6 +108,7 @@ void drawLineInContextFromStartPointAndEndPointWithScale (CGContextRef ctx, CGPo
     [super setPullingPercent:pullingPercent];
     //这里 pullingPercent == 1.0 时 会出错 
     //NSLog(@"pullingprecent = %.2f",pullingPercent);
+    //self.mj_y = -self.mj_h *  MIN(1.125, MAX(0.0, pullingPercent));//修改一下试试
     self.mj_y = -self.mj_h * MIN(1.0, MAX(0.0, pullingPercent));
     CGFloat complete = MIN(1.0, MAX(0.0, pullingPercent-0.125));
     //NSLog(@"%.4f",complete);
